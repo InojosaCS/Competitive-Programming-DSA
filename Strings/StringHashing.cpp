@@ -25,18 +25,18 @@ void stringHashing(string const& s){
 
     inv_pow[0] = p_pow[0] = 1LL;
     inv_pow2[0] = p_pow2[0] = 1LL;
-	  ll pinv = inv(p,m);
-	  ll pinv2 = inv(p,m2);
+    ll pinv = inv(p,m);
+    ll pinv2 = inv(p,m2);
 	
     for (int i = 1; i < n; i++){
         p_pow[i] = (p_pow[i-1] * p) % m;
         inv_pow[i] = (inv_pow[i-1] * pinv) % m;
         p_pow2[i] = (p_pow2[i-1] * p) % m2;
         inv_pow2[i] = (inv_pow2[i-1] * pinv2) % m2;
-	  }
+    }
 	
     for (int i = 0; i < n; i++){
         h[i+1] = (h[i] + (s[i] - 'a' + 1) * p_pow[i]) % m;
         h2[i+1] = (h2[i] + (s[i] - 'a' + 1) * p_pow2[i]) % m2;
-	  }
+    }
 }
