@@ -71,6 +71,7 @@ public class countingRooms{
 		solve();
 	}
 
+	// Fast input template by SecondThread https://codeforces.com/profile/SecondThread
 	static class FastScanner {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st=new StringTokenizer("");
