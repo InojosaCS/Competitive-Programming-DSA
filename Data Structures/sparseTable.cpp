@@ -1,6 +1,6 @@
 /*
 Sparse  Table
-Use: Answerig queries on immutable arrays for idempotent functions
+Use: Answering queries on immutable arrays for idempotent functions
 Complexity: N*LogN + Q
 Tested on: https://www.spoj.com/problems/RMQSQ/
 Tested on: https://cses.fi/problemset/task/1647
