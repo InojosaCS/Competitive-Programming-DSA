@@ -37,7 +37,7 @@ void buildST(int n){
 
 int query(int l, int r){
     int lenght = r-l+1;
-    int k = 31 - __builtin_clz(lenght); // Log(k) in O(1)
+    int k = 31 - __builtin_clz(lenght); // Log(lenght) in O(1)
     return fun(m[l][k], m[r - (1<<k) + 1][k]);
 }
 
